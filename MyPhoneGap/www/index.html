@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+<link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body bgcolor="blue">
+	<h2>Storage</h2>
+	<marquee>
+		<blockquote>
+			<p>Provides access to the devices storage options.</p>
+		</blockquote>
+	</marquee>
+	<h4 class="help">
+		Based on <b>W3C Web SQL Database Spec</b> and <b>W3C Web Storage
+			API Spec</b>
+	</h4>
+	<input type="button" value="Create DB" class="btn"
+		onclick="createDB();" />
+	<br>
+	<input type="button" value="SQL Result Set" class="btn"
+		onclick="getSqlResultSet();" />
+	<br>
+	<div class="result-block">
+		SQL Result: <br />
+		<span id="sql-result"></span><br />
+	</div>
+	<br />
+	<input type="button" class="btn" value="Write LocalStorage"
+		onclick="writeLocalStorage();" />
+	<br>
+	<input type="button" class="btn" value="Read LocalStorage"
+		onclick="readLocalStorage();" />
+	<br>
+	<input type="button" class="btn" value="Remove Item"
+		onclick="removeItemLocalStorage();" />
+	<br>
+	<div class="result-block">
+		Local Storage: <span id="local-storage-result"></span><br />
+	</div>
+	<!-- /scrollable -->
+	<div id="footer">
+		<h1>&copy; 2012 Mobile Developer Solutions</h1>
+	</div>
+	<script type="text/javascript" charset="utf-8" src="database.js"></script>
+</body>
+</html>
